@@ -5,6 +5,8 @@
 #include <vector>
 #include "windows.h"
 
+#define is_bot 1
+
 struct ans
 {
 	int x = 0;
@@ -386,7 +388,7 @@ int main()
 {
 	srand(time(0));
 
-	bool bot = 1;
+	bool bot = is_bot;
 
 	sf::RenderWindow app(sf::VideoMode(384, 416), "Minesweeper");
 	app.setFramerateLimit(10);
